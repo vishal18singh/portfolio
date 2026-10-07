@@ -1,13 +1,15 @@
-import Navbar from "./components/Navbar";
+import { profile, skills } from "./components/data";
 import Hero from "./components/Hero";
-import About from "./components/About";
-
+import Navbar from "./components/Navbar";
+import About from "./components/About"
+import Skills from "./components/Skills";
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
+    <Navbar profile = {profile}/>
+      <Hero profile={profile} />
+      <About skills={skills}/>
+    <Skills skills={skills}/>
     </>
   );
 }
